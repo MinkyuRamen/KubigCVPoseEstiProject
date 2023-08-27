@@ -24,15 +24,15 @@ ex) 앞차고 압굽혀 찌르기 ⇒ 앞차기, 압굽혀 찌르기 따로 분�
 추출한 고양시 태권도 데이터에서 각각 동작별 분류를 진행한다.
 
 #### Without CNN
-- 1. RandomForest -> acc 0.969 (w/ tabular data)
-- 2. Feedforward Neural Network -> acc 0.71 (w/ tabular data)
-- 3. Multi-Layer Perceptron -> acc 0.94 (w/ tensor transformation)
+ 1. RandomForest -> acc 0.969 (w/ tabular data)
+ 2. Feedforward Neural Network -> acc 0.71 (w/ tabular data)
+ 3. Multi-Layer Perceptron -> acc 0.94 (w/ tensor transformation)
 
 #### With CNN
 tabular data -> 2d array 로 변환  
-- 4. CNN with Conv1d -> acc 0.94
-- 5. CNN with Conv2d -> acc 0.95
-- 6. Pre-trained CNN (MobileNet_v2) -> acc 0.91
+ 4. CNN with Conv1d -> acc 0.94
+ 5. CNN with Conv2d -> acc 0.95
+ 6. Pre-trained CNN (MobileNet_v2) -> acc 0.91
 
 ### video process
 태극 7장 영상(1분)을 0.2초단위(프레임)으로 자른다. 총 약 300장의 이미지를 추출한다.
